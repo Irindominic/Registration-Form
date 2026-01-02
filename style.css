@@ -1,0 +1,115 @@
+*{
+    /* css reset */
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+header {
+    position: relative; /* important for overlay if needed */
+    background-image: url("https://i.pinimg.com/736x/95/2f/e6/952fe6563aaf20fb2e5359a9721ad156.jpg");
+    background-size: cover;       /* cover the entire header */
+    background-position: center;  /* center the image */
+    background-repeat: no-repeat; /* do not tile */
+    color: white;                 /* text color on image */
+    text-align: center;           /* center text */
+    padding: 80px 20px;           /* make header tall enough */
+}
+h1{
+    font-size:40px ;
+}
+body{
+    background-color:#121c2c;;
+}
+.form-container {
+    display: flex;           /* enable flex layout */
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    min-height: 100vh;       /* full page height */
+    padding: 10px;
+}
+
+form {
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+    background-color: #121c2c;
+}
+label {
+    color: #a0eaff;
+    font-size: 20px;   /* label text a0eaff*/
+}
+
+input, select {
+    font-size: 16px;   /* input box text */
+}
+
+/* Radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color:aqua; /* bright cyan to match dark theme 00bff*/
+    margin-right: 8px;
+    cursor: pointer;
+}
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #1a2738; /* dark background */
+    color: #ffffff;            /* text color */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+option {
+    background-color: #1a2738; /* dark option background */
+    color: #ffffff;            /* text color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;                 /* full width */
+    padding: 10px;               /* space inside box */
+    margin-bottom: 15px;
+    border: 1px solid #555;      /* border color */
+    border-radius: 5px;          /* rounded corners */
+    background-color: #1a2738 !important;   /* dark background of input box */
+    color: #ffffff !important;              /* text inside input */
+    font-size: 16px;
+    box-sizing: border-box;       /* includes padding in width */
+    outline: none;                /* remove default outline */
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+    border-color: aqua;       /* border color when typing #00bfff */
+    background-color:#2b3d5a;   /* slightly lighter dark background 22324a*/
+    border-width: 3px;
+}
+#SubButton{
+    display: block;
+    background-color:#1a2738;
+    color: #a0eaff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px auto;   
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 50px;
+    border-color:#a0eaff;
+    cursor: pointer; 
+    transition: 0.3s;   /* smooth animation for any changes (like hover) */
+}
+#SubButton:hover {
+    background-color: #0099cc;  /* darker cyan when mouse is over */
+    color: #ffffff;
+    transform: scale(1.05);     /* slightly enlarges the button (5%) */
+}

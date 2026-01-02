@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TechXplore 2026 - COLLEGE TECHNICAL FEST REGISTRATION </h1>
+        <br>
+        <h3>TechXplore 2026 is an annual technical fest organized by the college to encourage innovation, creativity, and technical excellence among the students.<br>The event includes various technical and non-technical competitions such as coding contests, paper presentations, workshops, and quizzes.</h3>
+        <br><br>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <div class="form-container">
+            <form action="thankyou.html" method="get">
+                <br><br>
+                <label for="name">Name:   </label>
+                <input type="text" id="name" required>
+                <br><br>
+                <label for="dob">DOB:</label>
+                <input type="date" name="" id="" required>
+                <br><br>
+                <label for="department">Department</label>
+                    <select name="Department:" id="" required>
+                        <option value="">Select Department</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                    </select>
+                <br><br>
+                <label for="year">Year of Study</label>
+                    <select name="year" id="" required>
+                        <option value=""></option>
+                        <option value="CSE">1st year</option>
+                        <option value="ECE">2nd year</option>
+                        <option value="EEE">3rd year</option>
+                        <option value="4th">4th year</option>
+                    </select>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="" required>
+                <br><br>
+                <label for="phn">Phone No:</label>
+                <input type="tel" name="phn" pattern="[0-9]{10}" required title="Please enter a 10-digit phone number">
+                <br><br>
+                <label for="gender">Gender:</label>
+                <br>
+                <label><input type="radio" name="gender" required>Male</label>
+                <br>
+                <label><input type="radio" name="gender" required>Female</label>
+                <br>
+                <label><input type="radio" name="gender" required>Other</label>
+                <br><br>
+                <label for="events">Events Interested:</label>
+                <br>
+                <label><input type="checkbox" id="hack">Hackathons</label>
+                <br>
+                <label><input type="checkbox" id="quiz">Quiz</label>
+                <br>
+                <label><input type="checkbox" id="work">Workshops</label>
+                <br><br>
+                <input type="submit" id="SubButton" value="Submit">
+            </form>
+        </div>
+
+        </section>
+    </main>
+</body>
+</html>
